@@ -24,7 +24,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-  private EditText num1, num2;
+  private EditText num1, num3;
   private Button btnAdd, btnNonPremitive, btnCall;
   private TextView total;
   protected IAdd addService;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     setContentView(R.layout.activity_main);
 
     num1 = (EditText) findViewById(R.id.num1);
-    num2 = (EditText) findViewById(R.id.num2);
+    num3 = (EditText) findViewById(R.id.num2);
     btnAdd = (Button) findViewById(R.id.btnAdd);
     btnAdd.setOnClickListener(this);
 
@@ -96,12 +96,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         case R.id.btnAdd:
 
-          if (num1.length() > 0 && num2.length() > 0 && addService != null) {
+          if (num1.length() > 0 && num3.length() > 0 && addService != null) {
             try {
               total.setText("");
               total.setText("Result: " + addService
                   .addNumbers(Integer.parseInt(num1.getText().toString()),
-                      Integer.parseInt(num2.getText().toString())));
+                      Integer.parseInt(num3.getText().toString())));
 
 
             } catch (RemoteException e) {
