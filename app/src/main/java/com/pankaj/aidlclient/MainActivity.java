@@ -1,4 +1,4 @@
-package com.chintan.aidlclient;
+package com.pankaj.aidlclient;
 
 import android.app.Service;
 import android.content.ComponentName;
@@ -17,8 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.karumi.dexter.Dexter;
-import com.chintan.aidlserver.IAdd;
-import com.chintan.aidlserver.Person;
+import com.pankaj.aidlserver.IAdd;
+import com.pankaj.aidlserver.Person;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private TextView total;
   protected IAdd addService;
   private String Tag = "Client Application";
-  private String serverAppUri = "com.chintan.aidlserver";
+  private String serverAppUri = "com.pankaj.aidlserver";
 
 
   @Override
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       intent.setAction("service.calc");
 
             /*From 5.0 annonymous intent calls are suspended so replacing with server app's package name*/
-      intent.setPackage("com.chintan.aidlserver");
+      intent.setPackage("com.pankaj.aidlserver");
 
       // binding to remote service
       bindService(intent, serviceConnection, Service.BIND_AUTO_CREATE);

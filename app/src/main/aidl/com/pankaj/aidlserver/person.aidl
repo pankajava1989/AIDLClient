@@ -1,4 +1,4 @@
 // personAIDL.aidl
-package com.chintan.aidlserver;
+package pankaj.aidlserver;
 parcelable Person;
 

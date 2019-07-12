@@ -1,10 +1,10 @@
-package com.chintan.aidlserver;
+package com.pankaj.aidlserver;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by chintan.desai on 29-01-2018.
+ * Created by pankaj.desai on 29-01-2018.
  */
 public class Person implements Parcelable {
     public String name;

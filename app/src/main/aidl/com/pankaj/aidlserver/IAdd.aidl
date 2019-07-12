@@ -1,6 +1,6 @@
 // IAdd.aidl
-package com.chintan.aidlserver;
-import com.chintan.aidlserver.Person;
+package pankaj.aidlserver;
+import pankaj.aidlserver.Person;
 // Declare any non-default types here with import statements
 
 interface IAdd {
