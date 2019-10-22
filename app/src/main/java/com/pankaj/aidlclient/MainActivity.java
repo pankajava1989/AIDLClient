@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     initConnection();
   }
 
-  // make for establishing connection by pankaj
+  // make for establishing connection by pankaj 123
   private void initConnection() {
     if (addService == null) {
       Intent intent = new Intent(IAdd.class.getName());
