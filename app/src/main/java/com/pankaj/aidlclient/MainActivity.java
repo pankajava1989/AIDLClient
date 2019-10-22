@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   protected IAdd addService;
   private String Tag = "Client Application";
   private String serverAppUri = "com.pankaj.aidlserver";
+    private String serverAppUri2 = "com.pankaj.aidlserver";
 
 
   @Override
