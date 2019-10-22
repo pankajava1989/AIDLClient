@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
   }
 
-  // changes made for test git 1234
+  // changes made for test git 123456
   private ServiceConnection serviceConnection = new ServiceConnection() {
     @Override
     public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   protected void onResume() {
     super.onResume();
     if (addService == null) {
-      initConnection();
+        initConnection();
     }
   }
 }
